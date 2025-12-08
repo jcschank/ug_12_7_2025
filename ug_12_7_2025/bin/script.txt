@@ -1,0 +1,69 @@
+/* This script allows the user to perform parameter sweep of up to 3 parameters in a simulation
+session. To sweep a parameter for two or more values, simply list the values after the parameter
+as illustrated below:
+
+public double x = 2, 3.1, 4.2, 5;
+
+As mentioned aboveUp to 3 parameters can be swept in a single session, e.g.:
+
+public double x = 2.7, 3.1;
+public int y = 1, 2, 3;
+public boolean z = true, false;
+
+An x X y X z Cartisian crossproduct table is generated for conducting the parameter sweep:
+
+public double x = 2.7,  2.7,  2.7,  2.7,  2.7,  2,7,  3.1,  3.1,  3.1,  3.1,  3.1,  3.1;
+public int y =    1,    1,    2,    2,    3,    3,    1,    1,    2,    2,    3,    3;
+public boolean z =true, false,true, false,true, false,true, false,true, false,true, false;
+
+The table is generated from the first three parameters encountered with more than one value.
+After 3 parameters are encountered with more than one value, subsequent parameters with more than
+one value are ignored.*/
+
+/* sweepable parameters */
+public boolean sex = true;//sexual reproduction
+public boolean ugOfferZero = false;
+public double globalGroupDispersion = 0.05, 0.1, 0.15, 0.2;
+public double dispersalRate = 0.05,0.1, 0.15, 0.2;
+public double resourceDeficit = 0.9;
+public double deficitCost = 0.0;
+public double io = 262.5;//5% increase over 250
+
+/* fixed parameters */
+public double ibiTau = 50.0;
+public double averageAge = 200.0;
+public int recipients = 1;
+public int dictators = 1;
+public int groupRadius = 1;
+public int dispersalRadius = 1;
+public int n = 10000;
+public int maxN = 10000;
+public int groups = 1000;
+public int maxGroupSize = 20;
+public int minGroupSize = 0;
+public double mutationRate = 0.01;
+public double ioSD = 0.0;
+public double baseResourceEndowment = 5.0;
+
+public double sdAge = 0.1;
+public double resourceEndowment = 10.0;
+public double resourceEndowmentSD = 0.1;
+public double resourceEndowmentSuccessRate = 0.5;
+public int n_intervals = 10;
+public int offerIntervals = 0;
+public int gridWidth = 250;
+public int gridHeight = 250;
+
+/*simulation parameters */
+public boolean autoCalculateGroups = false;
+public boolean autoCalculateGame = true;
+public boolean autoCalculateLifspan = false;
+public boolean autoCalculateThreshold = false;
+public boolean paramSweeps = true;
+public long simLength = 200001;
+public int simNumber = 10;
+public int dataSamplingInterval = 1000;
+public int burnIn = 180000;
+public double scheduleTimeInterval = 1.0;
+public boolean closeProgramAtend = true;
+public boolean dynamicColorGroup = false;//if true, groups are dynamically colored on birth, death, dispersion

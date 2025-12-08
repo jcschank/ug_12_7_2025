@@ -1,0 +1,15 @@
+/* This runtime file allows the user to specify a simulation script file for simulation.
+It also allows the user to specify the data output folder and file name. The column headers
+for the data can also be specified. The form of the script is specified below:*/
+
+
+
+
+
+Scriptname: script.txt // The name of the file for parameter sweeps
+DataFolder: data //Folder holding simulation results
+DataFile: results.txt //Name of results file.
+CheckSweepOptions: false //Determines whether parameter sweeps is automatically checked.
+ColumnHeaders:groups, MeanO,SDO, MeanOAT,MeanA,SDA, MeanAAT,reject,o.0,o.1,o.2,o.3,o.4,o.5,o.6,o.7,o.8,o.9,o1,r.0,r.1,r.2,r.3,r.4,r.5,r.6,r.7,r.8,r.9,r1,a.0,a.1,a.2,a.3,a.4,a.5,a.6,a.7,a.8,a.9,a1, Disp,MClus,SDClus, c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16,c17,c18,c19,c20,c21,c22,c23,c24,c25,o1,o2,o3,o4,o5,o6,o7,o8,o9,o10,o11,o12,o13,o14,o15,o16,o17,o18,o19,o20,o21,o22,o23,o24,o25,n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20,n21,n22,n23,n24,n25;
+Precision: 6  //Numerical precision for data, must be an integer.
+stopWhenNoAgents: true  //The simulation will stop when there are no agents left, else it will run to the stopping time even if there are not agents.
