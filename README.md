@@ -1,2 +1,3 @@
 The project is an Eclipse Java project using MASON and MASONplus (developed by jscschank to add functionality to MASON, in particular, the ability to do parameter sweeps and save data to files). MASON and MASONplus jars are included.
-The UG_DATA.zip file contains the simulation data reported in "Evolution and the ultimatum game: an agent-based model with interbirth intervals and population structure".
+The UG_DATA.zip file contains the simulation data reported in "Evolution and the ultimatum game: an agent-based model with interbirth intervals and population structure" in Excel files.
+The PowerPoint document FiguresUG_12_8_2025.pptx contains all figures in "Evolution and the ultimatum game: an agent-based model with interbirth intervals and population structure" with references to the Excel data files from which they were generated.
